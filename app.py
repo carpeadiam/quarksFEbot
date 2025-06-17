@@ -161,7 +161,7 @@ def home():
     return "Bot is alive", 200
 
 def run_bot():
-    bot.run("MTM4NDEzNTk1OTI1NTE5MTY3Mg.GbPgpw.qpOOIBNSMttXnBsRR9KpuebbVe9FgpgTP5IsXE")
+    bot.run(os.getenv('DISCORD_TOKEN'))
 
 if __name__ == '__main__':
     Thread(target=run_bot).start()
